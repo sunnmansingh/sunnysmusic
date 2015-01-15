@@ -16,6 +16,16 @@ angular.module('funWithAngularApp')
 				}); 
 		}; 
 
+//http://ws.audioscrobbler.com/2.0/?method=artist.getSimilar&api_key=xxx...
+
+		var getArtists = function(artistname){
+			return	$http.get("http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=" + artistname + 
+				    "&api_key=dad734b737bb5d11481192a16897fe56" + "&format=json")
+				.then(function(response){
+					return	 response.data; 
+				}); 
+		}; 
+
 		var getRepos = function(user){
 			return	$http.get(user.repos_url) 
 				.then(function(response){
@@ -43,7 +53,8 @@ angular.module('funWithAngularApp')
 		return {
 			getUser  : getUser, 
 			getRepos : getRepos, 
-			getRepoDetails : getRepoDetails
+			getRepoDetails : getRepoDetails, 
+			getArtists     : getArtists
 		}; 
   });
 

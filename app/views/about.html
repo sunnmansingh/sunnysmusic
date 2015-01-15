@@ -1,1 +1,32 @@
 <p>This is the about view.</p>
+
+
+<div class="row marketing">
+   <h1>{{message}}</h1>
+
+   <div>{{error}}</div>
+    {{countdown}}
+   <form name="searchArtist" ng-submit="search(artistname)">
+      <input type="search" required placeholder="artist to find" ng-model="artistname"/>
+      <input type="submit" value="search" />
+
+       
+
+   </form>
+  <h1>{{artists.length}}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="artist in artists">
+        <td>{{artist.name}}</td>
+        <td>{{artist.listeners}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
