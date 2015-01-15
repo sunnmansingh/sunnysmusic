@@ -48,6 +48,8 @@ angular.module('funWithAngularApp')
   });
 
 
+
+//cahnges 
   // (function(){
 
 // 	var github = function($http){
@@ -58,6 +60,8 @@ angular.module('funWithAngularApp')
 // 					return response.data; 
 // 				}); 
 // 		}; 
+
+
 
 // 		var getRepos = function(user){
 // 			return	$http.get(user.repos_url) 
