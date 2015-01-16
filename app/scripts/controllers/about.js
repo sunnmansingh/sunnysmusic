@@ -9,11 +9,10 @@
  */
 angular.module('funWithAngularApp')
   .controller('AboutCtrl', function (
-  
   $scope, github, $routeParams) {
     
     var onArtistComplete = function(data){
-    	$scope.artists = data.artist;
+    	$scope.artists = data.results.artistmatches.artist;
     	//github.getRepos($scope.user).then(onRepos, onError); 
     }; 
 
@@ -21,9 +20,9 @@ angular.module('funWithAngularApp')
     // 	$scope.repos = data; 
     // }; 
 
-
       $scope.search = function(artistname){
     	 github.getArtists($scope.artistname).then(onArtistComplete, onError); 
+
     }; 
     	$scope.artistname = "cher"; 
 
@@ -33,6 +32,4 @@ angular.module('funWithAngularApp')
     
     	//$scope.artistname = $routeParams.artistname; 
     	//$scope.repoSortOrder = "-stargazers_count"; 
-        
-       
   });
