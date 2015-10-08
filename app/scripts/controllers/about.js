@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name funWithAngularApp.controller:AboutCtrl
+ * @name sunnysmusic.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the funWithAngularApp
+ * Controller of the sunnysmusic
  */
-angular.module('funWithAngularApp')
+angular.module('sunnysmusic')
   .controller('AboutCtrl', function (
   $scope, github, $routeParams) {
     

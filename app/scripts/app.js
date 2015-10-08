@@ -1,14 +1,14 @@
 'use strict';
 /**
  * @ngdoc overview
- * @name funWithAngularApp
+ * @name sunnysmusic
  * @description
- * # funWithAngularApp
+ * # sunnysmusic
  *
  * Main module of the application.
  */
 angular
-  .module('funWithAngularApp', [
+  .module('sunnysmusic', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

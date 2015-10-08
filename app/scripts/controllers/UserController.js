@@ -1,4 +1,4 @@
-angular.module('funWithAngularApp')
+angular.module('sunnysmusic')
   .controller('UserCtrl', function (
   	$scope, github, $routeParams) {
     

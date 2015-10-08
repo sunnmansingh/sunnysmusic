@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name funWithAngularApp.controller:MainCtrl
+ * @name sunnysmusic.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the funWithAngularApp
+ * Controller of the sunnysmusic
  */
-angular.module('funWithAngularApp')
+angular.module('sunnysmusic')
   .controller('MainCtrl', function (
   	$scope, $interval, $location) {
     

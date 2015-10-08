@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('funWithAngularApp'));
+  beforeEach(module('sunnysmusic'));
    beforeEach(module('ui.bootstrap'));
 
   var MainCtrl,

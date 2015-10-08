@@ -1,4 +1,4 @@
-angular.module('funWithAngularApp')
+angular.module('sunnysmusic')
   .controller('RepoCtrl', function ($scope, github, $routeParams) {
 
     var reponame = $routeParams.reponame; 

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name funWithAngularApp.controller:AboutCtrl
+ * @name sunnysmusic.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the funWithAngularApp
+ * Controller of the sunnysmusic
  */
-angular.module('funWithAngularApp')
+angular.module('sunnysmusic')
   .factory('github', function ($http) {
 		var getUser = function(username){
 			return	$http.get("https://api.github.com/users/" + username)
@@ -87,7 +87,7 @@ angular.module('funWithAngularApp')
 // 		}; 
 // 	}; 
 
-// 	var module = angular.module("funWithAngularApp"); 
+// 	var module = angular.module("sunnysmusic"); 
 // 	module.factory("github", github); 
 
 // }()); 
